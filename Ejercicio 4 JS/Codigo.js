@@ -1,9 +1,15 @@
-//Ingreso de datos
 
-var horas = prompt('Ingrese la cantidad de horas trabajadas en el mes')
-var valorHora = prompt('Ingrese el valor de la hora para el empleado')
 
-//Calculo
+var array=[2,5,7,8,3]
 
-alert('El sueldo mensual a pagar es de $'+Number(horas*valorHora))
+console.log(array)
 
+var promedio=array.reduce((a,b)=>(a+b))/array.length
+
+console.log(promedio)
+
+var des = array.filter(a => a<4).length/array.length
+
+var ap = array.filter(a => a>4).length/array.length
+
+console.log(ap)
